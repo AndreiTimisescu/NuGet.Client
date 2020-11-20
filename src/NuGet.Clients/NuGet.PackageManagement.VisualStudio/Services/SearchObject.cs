@@ -228,7 +228,7 @@ namespace NuGet.PackageManagement.VisualStudio
                     _cacheItemPolicy);
 
             NuGetRemoteFileService.AddIconToCache(packageSearchMetadata.Identity, packageSearchMetadata.IconUrl);
-            NuGetRemoteFileService.AdddLicenseToCache(packageSearchMetadata.Identity, packageSearchMetadata.IconUrl);
+            NuGetRemoteFileService.AddLicenseToCache(packageSearchMetadata.Identity, packageSearchMetadata.IconUrl);
         }
     }
 }
