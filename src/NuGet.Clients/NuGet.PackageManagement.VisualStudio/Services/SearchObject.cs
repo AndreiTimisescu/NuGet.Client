@@ -226,6 +226,9 @@ namespace NuGet.PackageManagement.VisualStudio
                     PackageSearchMetadataCacheObject.GetCacheId(packageSearchMetadata.Identity.Id, includesPrerelease, _packageSources),
                     new PackageSearchMetadataCacheObject(packageSearchMetadata, _packageMetadataProvider),
                     _cacheItemPolicy);
+
+            NuGetRemoteFileService.AddIconToCache(packageSearchMetadata.Identity, packageSearchMetadata.IconUrl);
+            NuGetRemoteFileService.AdddLicenseToCache(packageSearchMetadata.Identity, packageSearchMetadata.IconUrl);
         }
     }
 }
